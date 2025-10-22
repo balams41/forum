@@ -2,8 +2,13 @@
 
 {% block body %}
 
-    <h1>Forum balamini</h1>d
-   <p>Salut à tous !
-J’ai créé un petit forum pour suivre toute l’actualité du Real Madrid : les matchs, les buteurs, les blessés, et tout ce qu’il faut savoir sur le club. N’hésitez pas à venir jeter un œil, partager vos avis et discuter entre fans ! Hala Madrid !</p>
+    
+    {% if app.user %}
+        <h1>Bonjour,{{ app.user.userIdentifier }},  T'chaton ensemble ! 😺</h1>
+    {% else %}
+        {# <h1>Forum T'chaton ensemble ! 😺</h1> #}
+    {% endif %}
+
+        
 
 {% endblock %}

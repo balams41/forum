@@ -1,36 +1,29 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Barre de navigation</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <title>Forum - Navbar</title>
+     <link rel="stylesheet" href="{{ ('css/style.css') }}">
 </head>
 <body>
-  <nav class="navbar">
-    <div class="logo"></div>
 
-    <ul class="nav-links">
-        <li><a href="#">Forum</a></li>
-        <li><a href="#">Actualité</a></li>
-        <li><a href="#">Discussion</a></li>
-        <li><a href="#">Contact</a></li>
+  <nav class="navbar">
+    <div class="navbar-logo">
+      <a href="index.html">MonForum</a>
+    </div>
+    
+    <ul class="navbar-links">
+      <li><a href="index.html">Accueil</a></li>
+      <li><a href="forums.html">Forums</a></li>
+      <li><a href="discussions.html">Discussions</a></li>
     </ul>
 
-   
-    <div class="auth-buttons">
-        <a href="#" class="btn login">Connexion</a>
-        <a href="#" class="btn register">Inscription</a>
-        <a href="#" class="btn logout">Déconnexion</a>
+    <div class="navbar-buttons">
+      <a href="login.html" class="btn">Connexion</a>
+      <a href="register.html" class="btn">Inscription</a>
+      <a href="logout.php" class="btn logout">Déconnexion</a>
     </div>
-
-
-    <div class="hamburger">
-        <span></span>
-        <span></span>
-        <span></span>
-    </div>
-</nav>
+  </nav>
 
 </body>
-</html>
+</
